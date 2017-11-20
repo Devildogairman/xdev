@@ -1,0 +1,22 @@
+local ITEM = Clockwork.item:New("id_weapon_base");
+	ITEM.name = "ID Locked Stunstick";
+	ITEM.model = "models/dpfilms/metropolice/props/hd_stunbaton.mdl";
+	ITEM.weight = 0.75;
+	ITEM.batch = 1;
+	ITEM.cost = 250;
+	ITEM.access = "U";
+	ITEM.business = false;
+	ITEM.category = "Melee";
+	ITEM.uniqueID = "id_stunstick";
+	ITEM.weaponClass = "cw_stunstick";
+	ITEM.description = "A heavy stick, it has a dial and switch on the handle.";
+	ITEM.meleeWeapon = true;
+	ITEM.isAttachment = true;
+	ITEM.hasFlashlight = false;
+	-- Used all below from Jamestaa's plugin.
+	ITEM.loweredOrigin = Vector(3, 0, -4);
+	ITEM.loweredAngles = Angle(0, 45, 0);
+	ITEM.attachmentBone = "Valvebiped.Bip01_Pelvis";
+	ITEM.attachmentOffsetAngles = Angle(0, 0, 90);
+	ITEM.attachmentOffsetVector = Vector(-4, 5, 4);
+ITEM:Register(ITEM);
